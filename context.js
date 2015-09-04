@@ -17,9 +17,11 @@ var wall_e = new Robot("Wall-E");
 
 
 // #1
+add(0,1);
 console.log(  );
 
-// #2  
+// #2
+
 console.log(  );
 
 // #3
