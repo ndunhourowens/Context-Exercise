@@ -15,18 +15,16 @@ var megaman = new Robot("Mega Man");
 var bmo = new Robot("B-Mo");
 var wall_e = new Robot("Wall-E");
 
-
+var calculate = add.bind(bender);
 // #1
-add(0,1);
-console.log(  );
+console.log( add( 0, 1)  );
 
-// #2
+// #2 -fun.call(thisArg[, arg1[, arg2[, ...]]])
+console.log( add.call(voltron, 2, 3) );
 
-console.log(  );
+// #3 - fun.apply(thisArg, [argsArray])
+console.log( add.apply(optimus,[20, 30]) );
 
-// #3
-console.log(  );
+// #4 - fun.bind(thisArg[, arg1[, arg2[, ...]]])
 
-// #4
-
-console.log(  );
+console.log( calculate('drinking ', 'beer') );
